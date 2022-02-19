@@ -130,6 +130,7 @@ const config = {
 				],
 				copyright: `Copyright © ${new Date().getFullYear()} Pypke. Built with Docusaurus.`,
 			},
+			autoCollapseSidebarCategories: true,
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
