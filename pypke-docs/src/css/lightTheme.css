@@ -1,0 +1,22 @@
+html[data-theme="light"] {
+	--ifm-color-primary: #1982c4;
+	--ifm-color-primary-light: #4d90fe;
+	--ifm-color-primary-lighter: #b3e5fc;
+	--ifm-color-primary-lightest: #e3f2fd;
+	--ifm-color-primary-dark: #1976d2;
+	--ifm-color-primary-darker: #2196f3;
+	--ifm-color-primary-darkest: #64b5f6;
+	--ifm-code-font-size: 95%;
+}
+
+html[data-theme="light"] .docusaurus-highlight-code-line {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+html[data-theme="light"] ::selection {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] ::-moz-selection {
+	background: rgba(0, 0, 0, 0.1);
+}
