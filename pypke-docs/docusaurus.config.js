@@ -71,6 +71,8 @@ const config = {
 				logo: {
 					alt: "My Site Logo",
 					src: "img/logo.png",
+					width: 32,
+					height: 32,
 				},
 				items: [
 					{
@@ -94,7 +96,8 @@ const config = {
 			},
 			announcementBar: {
 				id: "support_us",
-				content: "<b>Support us on Patreon!</b>",
+				content:
+					"<b>Support us on <a href='https://patreon.com/pypke'>Patreon!</a></b> 💝",
 				backgroundColor: "#feb402",
 				textColor: "#000000",
 				isCloseable: true,
