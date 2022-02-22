@@ -24,13 +24,15 @@ const config = {
 				docs: {
 					routeBasePath: "/",
 					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl: "https://github.com/pypke/pypke-docs-v2",
+					editUrl:
+						"https://github.com/pypke/pypke-docs-v2/tree/master/pypke-docs",
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true,
 				},
 				blog: {
 					showReadingTime: true,
-					editUrl: "https://github.com/pypke/pypke-docs-v2",
+					editUrl:
+						"https://github.com/pypke/pypke-docs-v2/tree/master/pypke-docs",
 				},
 				theme: {
 					customCss: [
@@ -64,6 +66,7 @@ const config = {
 				},
 			],
 			navbar: {
+				hideOnScroll: true,
 				title: "Pypke Bot",
 				logo: {
 					alt: "My Site Logo",
@@ -83,53 +86,20 @@ const config = {
 						position: "right",
 					},
 					{
-						href: "https://github.com/pypke/pypke-docs-v2",
+						href: "https://github.com/pypke/pypke-docs-v2/tree/master/pypke-docs",
 						className: "navbar-item-github",
 						position: "right",
 					},
 				],
 			},
-			footer: {
-				style: "dark",
-				links: [
-					{
-						title: "Docs",
-						items: [
-							{
-								label: "Tutorial",
-								to: "/docs/intro",
-							},
-						],
-					},
-					{
-						title: "Community",
-						items: [
-							{
-								label: "Discord",
-								href: "https://discordapp.com/invite/docusaurus",
-							},
-							{
-								label: "Twitter",
-								href: "https://twitter.com/docusaurus",
-							},
-						],
-					},
-					{
-						title: "More",
-						items: [
-							{
-								label: "Blog",
-								to: "/blog",
-							},
-							{
-								label: "GitHub",
-								href: "https://github.com/facebook/docusaurus",
-							},
-						],
-					},
-				],
-				copyright: `Copyright © ${new Date().getFullYear()} Pypke. Built with Docusaurus.`,
+			announcementBar: {
+				id: "support_us",
+				content: "<b>Support us on Patreon!</b>",
+				backgroundColor: "#feb402",
+				textColor: "#000000",
+				isCloseable: true,
 			},
+			hideableSidebar: true,
 			autoCollapseSidebarCategories: true,
 			prism: {
 				theme: lightCodeTheme,
