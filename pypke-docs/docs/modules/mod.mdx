@@ -1,0 +1,43 @@
+---
+title: Moderation
+id: moderation-module
+---
+
+## Commands
+
+:::info
+The permission required to use a command is given below.
+:::
+
+### Moderation
+
+| Command                                      | Example                         | Description                                      | Permission         |
+| -------------------------------------------- | ------------------------------- | ------------------------------------------------ | ------------------ |
+| `?kick <member> [reason]`                    | `?kick @user`                   | Kick a user                                      | `kick_members`     |
+| `?ban <member> [delete_days] [reason]`       | `?ban @user`                    | Ban a user                                       | `ban_members`      |
+| `?unban <member> [reason]`                   | `?unban @user`                  | Unban a user                                     | `ban_members`      |
+| `?mute <member> [time]`                      | `?mute @user 1h`                | Mute a user                                      | `moderate_members` |
+| `?unmute <member>`                           | `?unmute @user`                 | Unmute a user                                    | `moderate_members` |
+| `?massban [delete_days] [members...]`        | `?massban @user1 @user2 @user3` | Ban all the specified users                      | `ban_members`      |
+| `?softban <member> [delete_days=2] [reason]` | `?softban @user`                | Bans and then unbans a user acts as purging kick | `ban_members`      |
+| `?lock [channel]`                            | `?lock #general`                | Lock a channel                                   | `manage_channels`  |
+| `?lock server`                               | `?lock server`                  | Lock the server                                  | `manage_channels`  |
+| `?unlock [channel]`                          | `?unlock #general`              | Unlock a channel                                 | `manage_channels`  |
+| `?unlock server`                             | `?unlock server`                | Unlock the server                                | `manage_channels`  |
+
+### Purging
+
+These are commands/subcommands that can be used to purge messages differently. All requires the `manage_messages` permission & ignores pinned messages.
+
+| Command                             | Example                    | Description                                           |
+| ----------------------------------- | -------------------------- | ----------------------------------------------------- |
+| `?purge [amount]`                   | `?purge 10`                | Purge the amount of messages                          |
+| `?purge <user> <amount>`            | `?purge @user 10`          | Purge the amount of messages from a user              |
+| `?purge emoji <amount>`             | `?purge emoji 10`          | Purge the amount of messages with an emoji            |
+| `?purge human <amount>`             | `?purge human 10`          | Purge the amount of messages from humans              |
+| `?purge bot <amount>`               | `?purge bot 10`            | Purge the amount of messages from bots                |
+| `?purge embeds <amount>`            | `?purge embeds 10`         | Purge the amount of messages with embeds              |
+| `?purge links <amount>`             | `?purge links 10`          | Purge the amount of messages with links               |
+| `?purge file <amount>`              | `?purge file 10`           | Purge the amount of messages with file or attachments |
+| `?purge contains <amount> <substr>` | `?purge contains 10 hello` | Purge the amount of messages containing the substring |
+| `?purge mentions <amount>`          | `?purge mentions 10`       | Purge the amount of messages with mentions            |
