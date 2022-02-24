@@ -3,13 +3,17 @@ title: Moderation
 id: moderation-module
 ---
 
-## Commands
+Moderation commands to help you and your staff moderate the server.
+
+## Moderation commands
 
 :::info
 The permission required to use a command is given below.
 :::
 
-### Moderation
+### Punishments
+
+:::note Punishments
 
 | Command                                      | Example                         | Description                                      | Permission         |
 | -------------------------------------------- | ------------------------------- | ------------------------------------------------ | ------------------ |
@@ -25,9 +29,13 @@ The permission required to use a command is given below.
 | `?unlock [channel]`                          | `?unlock #general`              | Unlock a channel                                 | `manage_channels`  |
 | `?unlock server`                             | `?unlock server`                | Unlock the server                                | `manage_channels`  |
 
-### Purging
+:::
+
+### Bulk message delete
 
 These are commands/subcommands that can be used to purge messages differently. All requires the `manage_messages` permission & ignores pinned messages.
+
+:::note Bulk message delete
 
 | Command                             | Example                    | Description                                           |
 | ----------------------------------- | -------------------------- | ----------------------------------------------------- |
@@ -41,3 +49,5 @@ These are commands/subcommands that can be used to purge messages differently. A
 | `?purge file <amount>`              | `?purge file 10`           | Purge the amount of messages with file or attachments |
 | `?purge contains <amount> <substr>` | `?purge contains 10 hello` | Purge the amount of messages containing the substring |
 | `?purge mentions <amount>`          | `?purge mentions 10`       | Purge the amount of messages with mentions            |
+
+:::
