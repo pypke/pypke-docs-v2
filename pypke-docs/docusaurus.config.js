@@ -83,7 +83,7 @@ const config = {
 					},
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
-						href: "https://discord.gg/wait",
+						href: "https://dsc.gg/pypke-support",
 						className: "navbar-item-discord",
 						position: "right",
 					},
